@@ -33,6 +33,7 @@ test:
 about:
   home: https://github.com/pytest-dev/pytest-mock
   license: MIT
+  license_file: LICENSE
   summary: Thin-wrapper around the mock package for easier use with py.test
 
 extra:
