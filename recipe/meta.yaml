@@ -8,8 +8,8 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.zip
-  url: https://pypi.io/packages/source/p/pytest-mock/pytest-mock-{{ version }}.zip
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/pytest-mock/pytest-mock-{{ version }}.tar.gz
   {{ hash_type }}: {{ hash }}
 
 build:
