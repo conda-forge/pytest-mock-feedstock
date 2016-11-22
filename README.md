@@ -33,7 +33,6 @@ conda search pytest-mock --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
