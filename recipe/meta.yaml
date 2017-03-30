@@ -1,7 +1,7 @@
 {% set name = "pytest-mock" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 {% set hash_type = "sha256" %}
-{% set hash = "782f23f227874bac4cee878637c2af8efdd2c34c48fcbf9e79b00a0872056ffb" %}
+{% set hash = "83a17cbcd4dbc7c6c9dc885a0d598f9acd11f2d5142e0718ed32e14538670c1f" %}
 
 package:
   name: {{ name }}
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/p/pytest-mock/pytest-mock-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/{{ name }}/{{ name }}-{{ version }}.tar.gz
   {{ hash_type }}: {{ hash }}
 
 build:
