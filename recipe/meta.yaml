@@ -1,7 +1,7 @@
 {% set name = "pytest-mock" %}
-{% set version = "1.6.0" %}
+{% set version = "1.6.2" %}
 {% set hash_type = "sha256" %}
-{% set hash = "83a17cbcd4dbc7c6c9dc885a0d598f9acd11f2d5142e0718ed32e14538670c1f" %}
+{% set hash = "4e8721abd858ec3c3fe0284efb761748fae9e5cddb126dddb69a0b60664cdd44" %}
 
 package:
   name: {{ name }}
@@ -29,6 +29,8 @@ requirements:
 test:
   imports:
     - pytest_mock
+  commands:
+    - py.test --help
 
 about:
   home: https://github.com/pytest-dev/pytest-mock
