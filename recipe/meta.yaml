@@ -13,9 +13,8 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
-  noarch: python
 
 requirements:
   build:
@@ -28,10 +27,13 @@ requirements:
     - mock  # [py26 or py27]
 
 test:
+  source_files:
+    - test_pytest_mock.py
   imports:
     - pytest_mock
   commands:
     - py.test --help
+    - pytest test_pytest_mock.py
 
 about:
   home: https://github.com/pytest-dev/pytest-mock
