@@ -1,7 +1,7 @@
 {% set name = "pytest-mock" %}
-{% set version = "1.6.3" %}
+{% set version = "1.7.0" %}
 {% set hash_type = "sha256" %}
-{% set hash = "920d1167af5c2c2ad3fa0717d0c6c52e97e97810160c15721ac895cac53abb1c" %}
+{% set hash = "8ed6c9ac6b7565b226b4da2da48876c9198d76401ec8d9c5e4c69b45423e33f8" %}
 
 package:
   name: {{ name }}
@@ -13,18 +13,18 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: 1
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - setuptools_scm
   run:
     - python
     - pytest
-    - mock  # [py26 or py27]
+    - mock  # [py27]
 
 test:
   source_files:
