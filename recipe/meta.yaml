@@ -1,7 +1,7 @@
 {% set name = "pytest-mock" %}
-{% set version = "1.10.4" %}
+{% set version = "1.11.0" %}
 {% set hash_type = "sha256" %}
-{% set hash = "5bf5771b1db93beac965a7347dc81c675ec4090cb841e49d9d34637a25c30568" %}
+{% set hash = "3fd5ffb33b7041aea60a77f77b98e05d5acd577d53a01bf2ff0ca9780c6e3d84" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,7 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
