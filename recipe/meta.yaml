@@ -1,6 +1,5 @@
 {% set name = "pytest-mock" %}
 {% set version = "2.0.0" %}
-{% set hash_type = "sha256" %}
 {% set hash = "b35eb281e93aafed138db25c8772b95d3756108b601947f89af503f8c629413f" %}
 
 package:
@@ -10,10 +9,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
