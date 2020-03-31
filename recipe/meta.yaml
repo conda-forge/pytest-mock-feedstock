@@ -14,16 +14,16 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
 
 requirements:
   build:
-    - python
+    - python >=3.5
     - pip
     - setuptools_scm
   run:
-    - python
-    - pytest
-    - mock  # [py27]
+    - python >=3.5
+    - pytest    
 
 test:
   source_files:
