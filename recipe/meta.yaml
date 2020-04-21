@@ -1,6 +1,6 @@
 {% set name = "pytest-mock" %}
-{% set version = "3.0.0" %}
-{% set hash = "a4494016753a30231f8519bfd160242a0f3c8fb82ca36e7b6f82a7fb602ac6b8" %}
+{% set version = "3.1.0" %}
+{% set hash = "ce610831cedeff5331f4e2fc453a5dd65384303f680ab34bee2c6533855b431c" %}
 
 package:
   name: {{ name }}
@@ -23,7 +23,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.5
-    - pytest    
+    - pytest
 
 test:
   source_files:
