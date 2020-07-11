@@ -26,6 +26,8 @@ requirements:
     - pytest
 
 test:
+  requires:
+    - pytest-asyncio
   source_files:
     - tests
   imports:
