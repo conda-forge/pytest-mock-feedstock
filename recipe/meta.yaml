@@ -26,7 +26,7 @@ requirements:
     - pytest
 
 test:
-  requirements:
+  requires:
     - setuptools
   source_files:
     - tests
