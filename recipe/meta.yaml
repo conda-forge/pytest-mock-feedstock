@@ -28,6 +28,7 @@ requirements:
 test:
   requires:
     - setuptools
+    - pytest-asyncio
   source_files:
     - tests
   imports:
