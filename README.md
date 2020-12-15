@@ -5,11 +5,9 @@ Home: https://github.com/pytest-dev/pytest-mock
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytest-mock-feedstock/blob/master/LICENSE.txt)
 
 Summary: Thin-wrapper around the mock package for easier use with py.test
-
-
 
 Current build status
 ====================
