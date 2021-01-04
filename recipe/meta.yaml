@@ -1,6 +1,6 @@
 {% set name = "pytest-mock" %}
-{% set version = "3.4.0" %}
-{% set hash = "c3981f5edee6c4d1942250a60d9b39d38d5585398de1bfce057f925bdda720f4" %}
+{% set version = "3.5.0" %}
+{% set hash = "4992db789175540d40a193bc60e987b1e69f1a989adad525a44e581c82149b14" %}
 
 package:
   name: {{ name }}
