@@ -28,7 +28,6 @@ requirements:
 test:
   requires:
     - pytest-asyncio
-    - mock
     - setuptools    
   source_files:
     - tests
