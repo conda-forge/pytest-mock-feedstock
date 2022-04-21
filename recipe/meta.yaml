@@ -34,7 +34,7 @@ test:
   commands:
     - pip check
     - pytest --help
-    - pytest -vv tests
+    - pytest tests
 
 about:
   home: https://github.com/pytest-dev/pytest-mock
