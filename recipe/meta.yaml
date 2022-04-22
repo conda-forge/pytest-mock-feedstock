@@ -2,7 +2,7 @@
 
 package:
   name: pytest-mock
-  version: 1
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/p/pytest-mock/pytest-mock-{{ version }}.tar.gz
@@ -26,7 +26,8 @@ test:
   requires:
     - pip
     - pytest-asyncio
-    - setuptools
+    # TODO: remove after next version
+    {% if version == "3.7.0" %}- pytest <7{% endif %}
   source_files:
     - tests
   imports:
@@ -34,7 +35,7 @@ test:
   commands:
     - pip check
     - pytest --help
-    - pytest tests
+    - pytest -vv tests
 
 about:
   home: https://github.com/pytest-dev/pytest-mock
