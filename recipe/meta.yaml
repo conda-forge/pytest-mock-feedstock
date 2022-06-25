@@ -26,8 +26,7 @@ test:
   requires:
     - pip
     - pytest-asyncio
-    # TODO: remove after next version
-    {% if version == "3.7.0" %}- pytest <7{% endif %}
+    - pytest >=7.0
   source_files:
     - tests
   imports:
