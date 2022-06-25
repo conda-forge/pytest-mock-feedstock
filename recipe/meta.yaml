@@ -33,8 +33,7 @@ test:
     - pytest_mock
   commands:
     - pip check
-    - pytest --help
-    - pytest -vv tests
+    - pytest --help    
 
 about:
   home: https://github.com/pytest-dev/pytest-mock
