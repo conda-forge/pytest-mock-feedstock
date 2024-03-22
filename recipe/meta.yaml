@@ -1,4 +1,4 @@
-{% set version = "3.13.0" %}
+{% set version = "3.14.0" %}
 
 package:
   name: pytest-mock
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pytest-mock/pytest-mock-{{ version }}.tar.gz
-  sha256: 58c73e7eae1fc05aebe7bd4b3b59eb5beb5c0b644c7e2dd3cc652a749f0056e3
+  sha256: 2719255a1efeceadbc056d6bf3df3d1c5015530fb40cf347c0f9afac88410bd0
 
 build:
   number: 0
