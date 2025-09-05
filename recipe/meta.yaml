@@ -1,4 +1,4 @@
-{% set version = "3.14.1" %}
+{% set version = "3.15.0" %}
 
 package:
   name: pytest-mock
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pytest-mock/pytest_mock-{{ version }}.tar.gz
-  sha256: 159e9edac4c451ce77a5cdb9fc5d1100708d2dd4ba3c3df572f14097351af80e
+  sha256: ab896bd190316b9d5d87b277569dfcdf718b2d049a2ccff5f7aca279c002a1cf
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
     - setuptools
     - setuptools-scm
   run:
-    - pytest >=5.0
+    - pytest >=6.2.5
     - python >={{ python_min }}
 
 test:
